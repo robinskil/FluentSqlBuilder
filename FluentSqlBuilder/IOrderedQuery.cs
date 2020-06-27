@@ -1,4 +1,4 @@
-﻿namespace Extension.Data.SqlBuilder
+﻿namespace FluentSqlBuilder
 {
     public interface IOrderedQuery<T> : ISelectOnQuery<T>
     {

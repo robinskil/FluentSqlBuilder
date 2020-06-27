@@ -1,4 +1,4 @@
-﻿using Extension.Data.SqlBuilder.ExpressionResolvers;
+﻿using FluentSqlBuilder.ExpressionResolvers;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace Extension.Data.SqlBuilder
+namespace FluentSqlBuilder
 {
     public class ExpressionTreeWhereResolver : ExpressionTreeResolver
     {

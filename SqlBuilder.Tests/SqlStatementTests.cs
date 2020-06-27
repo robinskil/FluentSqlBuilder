@@ -1,13 +1,12 @@
-using Extension.Data.SqlBuilder.SqlExtensions;
-using Extension.Data.SqlBuilder.Tests.POCOs;
+using SqlBuilder.Tests.POCOs;
+using FluentSqlBuilder;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
-using System.Runtime.InteropServices.ComTypes;
 using Xunit;
 
-namespace Extension.Data.SqlBuilder.Tests
+namespace SqlBuilder.Tests
 {
     public class SqlStatementTests
     {

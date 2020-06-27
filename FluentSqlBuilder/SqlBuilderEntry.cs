@@ -1,6 +1,6 @@
 ﻿using System.Data.SqlClient;
 
-namespace Extension.Data.SqlBuilder
+namespace FluentSqlBuilder
 {
     public static class SqlBuilderEntry
     {

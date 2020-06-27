@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Extension.Data.SqlBuilder.Tests.POCOs
+namespace SqlBuilder.Tests.POCOs
 {
     public class Work
     {

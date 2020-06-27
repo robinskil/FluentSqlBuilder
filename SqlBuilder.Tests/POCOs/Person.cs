@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text;
 
-namespace Extension.Data.SqlBuilder.Tests.POCOs
+namespace SqlBuilder.Tests.POCOs
 {
     public class Person
     {

@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 using System.Linq;
-namespace Extension.Data.SqlBuilder
+using FluentSqlBuilder;
+
+namespace FluentSqlBuilder
 {
     public class ExpressionTreeJoinResolver
     {

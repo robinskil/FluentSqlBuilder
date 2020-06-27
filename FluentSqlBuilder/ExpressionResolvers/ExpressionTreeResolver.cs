@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace Extension.Data.SqlBuilder.ExpressionResolvers
+namespace FluentSqlBuilder.ExpressionResolvers
 {
     public abstract class ExpressionTreeResolver
     {

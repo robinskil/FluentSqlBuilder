@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Extension.Data.SqlBuilder
+namespace FluentSqlBuilder
 {
     public static class SelectAndHavingExtensions
     {

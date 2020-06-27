@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace Extension.Data.SqlBuilder
+namespace FluentSqlBuilder
 {
     [Serializable]
     internal class SqlBuilderException : Exception

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Linq.Expressions;
 
-namespace Extension.Data.SqlBuilder
+namespace FluentSqlBuilder
 {
     public interface IGroupedQuery<T> : ISelectOnQuery<T>
     {

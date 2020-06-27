@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Extension.Data.SqlBuilder\Extension.Data.SqlBuilder.csproj" />
+    <ProjectReference Include="..\FluentSqlBuilder\FluentSqlBuilder.csproj" />
   </ItemGroup>
 
 </Project>

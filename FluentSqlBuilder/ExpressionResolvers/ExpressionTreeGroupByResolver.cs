@@ -4,21 +4,22 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace Extension.Data.SqlBuilder.ExpressionResolvers
+namespace FluentSqlBuilder.ExpressionResolvers
 {
-    public class ExpresionTreeSelectResolver
+    public class ExpressionTreeGroupByResolver
     {
         private readonly Dictionary<string, string> typeAs;
         private readonly Dictionary<string, string> variableTypeName;
 
-        public ExpresionTreeSelectResolver(Dictionary<string, string> typeAs)
+        public ExpressionTreeGroupByResolver(Dictionary<string, string> typeAs)
         {
             this.typeAs = typeAs;
             this.variableTypeName = new Dictionary<string, string>();
         }
 
-        public string ResolveSelectLambda(LambdaExpression lambdaExpression)
+        public string ResolveGroupByLambda(LambdaExpression lambdaExpression)
         {
+            string result = "";
             if (typeof(NewExpression).IsAssignableFrom(lambdaExpression.Body.GetType()))
             {
                 var param = lambdaExpression.Parameters;
@@ -26,10 +27,10 @@ namespace Extension.Data.SqlBuilder.ExpressionResolvers
                 {
                     variableTypeName.Add(param[i].Name, typeAs.ElementAt(i).Value);
                 }
-                string result = "";
                 var selectedProperties = (lambdaExpression.Body as NewExpression).Arguments;
                 if (selectedProperties.Count > 0)
                 {
+                    result += " GROUP BY";
                     for (int i = 0; i < selectedProperties.Count; i++)
                     {
                         var memberExpr = selectedProperties[i] as MemberExpression;
@@ -44,13 +45,12 @@ namespace Extension.Data.SqlBuilder.ExpressionResolvers
                         }
                     }
                 }
-                return result;
             }
             else
             {
-                throw new SqlBuilderException("Select expressions are designed to only handle anonymous objects.");
+                throw new Exception();
             }
+            return result;
         }
-
     }
 }

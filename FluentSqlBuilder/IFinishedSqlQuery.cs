@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Data.SqlClient;
 
-namespace Extension.Data.SqlBuilder
+namespace FluentSqlBuilder
 {
     public interface IFinishedSqlQuery
     {

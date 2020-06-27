@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>1.0.0-alpha</Version>
+    <Authors>Robin Kooyman</Authors>
+    <Description>Fluent Sql builder is a package that allows developers to build a Sql Command or Sql Statement with Parameters using a strongly typed system similiar to LINQ without the hassle of maintaining a db context.</Description>
+    <Copyright>Copyright © 2020</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/robinskil/FluentSqlBuilder</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/robinskil/FluentSqlBuilder</RepositoryUrl>
+    <PackageTags>sql-query-builder sql t-sql sql-server database data-access sql-query fluent-sql fluent-sql-builder</PackageTags>
+    <PackageReleaseNotes>Alpha release as a proof of concept.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.1" />
+  </ItemGroup>
+
+</Project>
