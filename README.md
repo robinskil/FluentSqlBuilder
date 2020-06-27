@@ -1,6 +1,6 @@
-# Sql Builder
+# Fluent Sql Builder
 
-Welcome to the readme of Sql Builder. This is a library that allows developers to build a Sql Command or Sql Statement with Parameters using a strongly typed system similiar to LINQ without the hassle of creating/maintaining a db context.
+Welcome to the readme of Fluent Sql Builder. This is a library that allows developers to build a Sql Command or Sql Statement with Parameters using a strongly typed system similiar to LINQ without the hassle of creating/maintaining a db context.
 
 ## Example:
 All values supplied will be transformed to parameters. Therefore you won't have to worry about SQL Injection.
@@ -22,7 +22,7 @@ Currently it only supports SQL Server. All the functions can be concatenated wit
 
 You can install Sql Builder through nuget.
 
-## How to use Sql Builder?
+## How to use Fluent Sql Builder?
 
 Building a query always starts with the From<T>() function and ends with the Select() function similiar to LINQ.
 
