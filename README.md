@@ -2,6 +2,8 @@
 
 Welcome to the readme of Fluent Sql Builder. This is a library that allows developers to build a Sql Command or Sql Statement with Parameters using a strongly typed system similiar to LINQ without the hassle of creating/maintaining a db context.
 
+Get the nuget package at https://www.nuget.org/packages/FluentSqlBuilder/
+
 ## Example:
 All values supplied will be transformed to parameters. Therefore you won't have to worry about SQL Injection.
 ```cs
