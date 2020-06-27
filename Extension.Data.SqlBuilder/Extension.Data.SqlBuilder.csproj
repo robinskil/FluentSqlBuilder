@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <Version>1.0.0-alpha</Version>
+    <Authors>Robin Kooyman</Authors>
+    <Description>Sql builder is a package that allows developers to build a Sql Command or Sql Statement with Parameters using a strongly typed system similiar to LINQ without the hassle of maintaining a db context.</Description>
+    <Copyright>Copyright © 2020</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>

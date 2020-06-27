@@ -177,9 +177,9 @@ namespace Extension.Data.SqlBuilder
                         return $"[{variableTypeName[param.Name]}].[{arg.Member.Name}] NOT IN ({ResolveMemberAccessOnArrayExpressionToVal(methodCallExpression.Arguments[1] as MemberExpression)})";
                     }
                 case "LIKE":
-                    return $"[{variableTypeName[param.Name]}].[{arg.Member.Name}] LIKE '${ResolveMethodCallParameter(methodCallExpression.Arguments[1])}'";
+                    return $"[{variableTypeName[param.Name]}].[{arg.Member.Name}] LIKE {ResolveMethodCallParameter(methodCallExpression.Arguments[1])}";
                 case "NOTLIKE":
-                    return $"[{variableTypeName[param.Name]}].[{arg.Member.Name}] NOT LIKE '${ResolveMethodCallParameter(methodCallExpression.Arguments[1])}'";
+                    return $"[{variableTypeName[param.Name]}].[{arg.Member.Name}] NOT LIKE {ResolveMethodCallParameter(methodCallExpression.Arguments[1])}";
                 case "BETWEEN":
                     return $"[{variableTypeName[param.Name]}].[{arg.Member.Name}] BETWEEN {ResolveMethodCallParameter(methodCallExpression.Arguments[1])} AND {ResolveMethodCallParameter(methodCallExpression.Arguments[2])}";
                 case "NOTBETWEEN":
