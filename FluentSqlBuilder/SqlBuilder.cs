@@ -22,7 +22,7 @@ namespace FluentSqlBuilder
         protected readonly ExpressionTreeJoinResolver expressionTreeJoinResolver;
         protected readonly ExpressionTreeGroupByResolver expressionTreeGroupByResolver;
         protected readonly ExpressionTreeOrderByResolver expressionTreeOrderByResolver;
-        protected readonly ExpresionTreeSelectResolver expresionTreeSelectResolver;
+        protected readonly ExpressionTreeSelectResolver expresionTreeSelectResolver;
 
         protected readonly Dictionary<string, string> typeAsReplacement;
 
@@ -46,7 +46,7 @@ namespace FluentSqlBuilder
             this.expressionTreeWhereResolver = new ExpressionTreeWhereResolver(parameters,typeAsReplacement);
             this.expressionTreeGroupByResolver = new ExpressionTreeGroupByResolver(typeAsReplacement);
             this.expressionTreeOrderByResolver = new ExpressionTreeOrderByResolver(typeAsReplacement);
-            this.expresionTreeSelectResolver = new ExpresionTreeSelectResolver(typeAsReplacement);
+            this.expresionTreeSelectResolver = new ExpressionTreeSelectResolver(typeAsReplacement);
             this.sqlConnection = sqlConnection;
         }
         protected SqlBuilder(SqlConnection sqlConnection, Dictionary<string, object> parameters, string fromClause, string joinClause, Dictionary<string, string> typeAs)
@@ -59,7 +59,7 @@ namespace FluentSqlBuilder
             this.expressionTreeWhereResolver = new ExpressionTreeWhereResolver(parameters, typeAsReplacement);
             this.expressionTreeGroupByResolver = new ExpressionTreeGroupByResolver(typeAsReplacement);
             this.expressionTreeOrderByResolver = new ExpressionTreeOrderByResolver(typeAsReplacement);
-            this.expresionTreeSelectResolver = new ExpresionTreeSelectResolver(typeAsReplacement);
+            this.expresionTreeSelectResolver = new ExpressionTreeSelectResolver(typeAsReplacement);
             this.sqlConnection = sqlConnection;
         }
 

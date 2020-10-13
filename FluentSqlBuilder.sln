@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentSqlBuilder", "FluentS
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlBuilder.Tests", "SqlBuilder.Tests\SqlBuilder.Tests.csproj", "{BD7F43FB-A0B4-41E0-B059-B4B2562557AA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fluent.SqlQuery", "Fluent.SqlBuilder\Fluent.SqlQuery.csproj", "{FD645AA9-7CD9-44B4-AB4C-BABDD65D3CCB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fluent.SqlQuery.Tests", "Fluent.SqlQuery.Tests\Fluent.SqlQuery.Tests.csproj", "{12287118-DEBC-4236-9680-98806E298553}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{BD7F43FB-A0B4-41E0-B059-B4B2562557AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD7F43FB-A0B4-41E0-B059-B4B2562557AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD7F43FB-A0B4-41E0-B059-B4B2562557AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD645AA9-7CD9-44B4-AB4C-BABDD65D3CCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD645AA9-7CD9-44B4-AB4C-BABDD65D3CCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD645AA9-7CD9-44B4-AB4C-BABDD65D3CCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD645AA9-7CD9-44B4-AB4C-BABDD65D3CCB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12287118-DEBC-4236-9680-98806E298553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12287118-DEBC-4236-9680-98806E298553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12287118-DEBC-4236-9680-98806E298553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12287118-DEBC-4236-9680-98806E298553}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
